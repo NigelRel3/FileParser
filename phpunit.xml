@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false" 
+        backupStaticAttributes="false"
+        colors="true" 
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true" 
+        convertWarningsToExceptions="true"
+        processIsolation="true" 
+        stopOnFailure="false">
+	<coverage processUncoveredFiles="true">
+		<include>
+			<directory suffix=".php">./src/Core</directory>
+            <directory suffix=".php">./src/InputAdaptors</directory>
+            <directory suffix=".php">./src/OutputAdaptors</directory>
+            <directory suffix=".php">./src/Translators</directory>
+		</include>
+		<exclude>
+			<directory suffix=".php">./vendor</directory>
+            <directory suffix=".php">./tests</directory>
+		</exclude>
+		<report>
+			<html outputDirectory="./log" lowUpperBound="35"
+				highLowerBound="70" />
+		</report>
+	</coverage>
+	<testsuites>
+		<testsuite name="Tests">
+			<directory suffix="Test.php">./tests</directory>
+		</testsuite>
+	</testsuites>
+	<php>
+		<env name="TMP_DIR" value="../tmp/" />
+	</php>
+</phpunit>

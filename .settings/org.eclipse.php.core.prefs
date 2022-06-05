@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+include_path=0;/ECD-interview1
+org.eclipse.php.core.taskCaseSensitive=enabled
+org.eclipse.php.core.taskPriorities=NORMAL,HIGH,NORMAL
+org.eclipse.php.core.taskTags=TODO,FIXME,XXX
+phpVersion=php7.4
+useShortTags=false
+use_asp_tags_as_php=false

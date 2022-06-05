@@ -1,0 +1,6 @@
+{
+	"name" : "ecd-interview1/ecd-interview1",
+	"require-dev" : {
+		"phpunit/phpunit" : "~9.5"
+	}
+}
